@@ -3,127 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AN-94</title>
+    <meta name="description" content="Firewatch is a single player first-person mystery set in the Wyoming wilderness, developed by Campo Santo. Explore the story of Henry and Delilah as they uncover secrets in the forest.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <title>Firewatch</title>
     <link rel="stylesheet" href="Global.css">
 </head>
 <body>
-    <nav class="navbar">
-        <ul class="nav-menu">
-            <li><a href="#home">01 HOME</a></li>
-            <li><a href="#intel">02 INTEL</a></li>
-            <li><a href="#history">03 HISTORY</a></li>
-            <li><a href="#missions">04 MISSIONS</a></li>
-            <li><a href="#archive">05 ARCHIVE</a></li>
-        </ul>
-        <div class="nav-status">
-            <span class="status-dot"></span>
-            <span class="status-text">OPERATIONAL</span>
-            <span class="est-date">EST. 1987</span>
+    <a class="skip-link" href="#home">Skip to content</a>
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="nav-brand">
+            <img src="Image-Repository/Firewatch_Logo.png" alt="Firewatch style logo" class="brand-logo-image" loading="lazy">
         </div>
+        <ul class="nav-menu">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#history">INTRO</a></li>
+            <li><a href="#missions">EXPLORE</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+        </ul>
+        
     </nav>
     
-    <main class="main-content">
+    <main id="home" class="main-content">
         <div class="hero-section">
             <div class="background-image-container">
-                <img src="Image-Repository/94IMGBG.jpg" alt="AN-94 Weapon Background" class="hero-background-image">
+                <img src="Image-Repository/Wallpaper.jpg" alt="Firewatch Background" class="hero-background-image" loading="lazy">
             </div>
-            <h1 class="hero-title">AH-94</h1>
-            <p class="codename">CODENAME "ALVA"</p>
-            <div class="established">ESTABLISHED 1994</div>
+            <h1 class="hero-title">Firewatch</h1>
+            <p class="codename">A WYOMING SUMMER MYSTERY</p>
+            <div class="established">RELEASED 2016</div>
+            <p class="hero-lead">
+                Patrol the forest, track strange signals, and stay in contact through a single handheld radio.
+            </p>
+            <div class="hero-tags" aria-label="Highlights">
+                <span class="hero-tag">Narrative Adventure</span>
+                <span class="hero-tag">Wyoming, 1989</span>
+                <span class="hero-tag">Single-Player</span>
+            </div>
+            <div class="hero-actions">
+                <a href="#video" class="hero-btn hero-btn-primary">Watch Trailer</a>
+                <a href="#gallery" class="hero-btn hero-btn-secondary">View Gallery</a>
+            </div>
 
         </div>
     </main>
 
     <!-- About Section -->
-    <section class="about-section">
+    <section id="history" class="about-section">
         <div class="about-container">
             <div class="about-content">
-                <h2 class="about-title">ABOUT</h2>
-                <h3 class="about-subtitle">ANNA NIKONOVA</h3>
+                <h2 class="about-title">INTRODUCTION</h2>
+                <h3 class="about-subtitle">A BRIEF OVERVIEW</h3>
                 <p class="about-text">
-                    AN-94 is an elite T-doll from Defiance squadron. She believes that she is a side product and a reference model of AK-12, 
-                    she constantly and quietly provides AK-12 with supports and help. She has a doll-like behaviour and can only react with her cold, 
-                    emotionless expressions and speech, effectively masking over all her detailed thoughts and emotions. But all of her actions 
-                    still prove that even as a doll incapable of 
-                    laughter and tears, she is still an unyielding character who moves ever forward.
-                </p>
-                <p class="about-text">
-                    Designed by Doctor Samantha Shaw from the Neo-Soviet Union, AN-94 embodies the fusion of advanced technology and combat efficiency.
+                    Firewatch is a first-person mystery set in the Wyoming wilderness, where you play as Henry, a summer fire lookout.
+                    Through exploration and radio conversations with Delilah, the story blends isolation, suspense, and personal choices.
                 </p>
             </div>
             <div class="about-image">
-                <img src="Image-Repository/Dork.jpg" alt="AN-94 Rifle Side View" class="weapon-image">
+                <img src="Image-Repository/Wallpaper.jpg" alt="Firewatch Landscape" class="weapon-image" loading="lazy">
                 <div class="image-overlay">
-                    <span class="image-caption">Dork</span>
+                    <span class="image-caption">Firewatch</span>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Image Carousel (added below About Section) -->
+    <section id="carousel" class="carousel-section">
+        <div class="carousel-container">
+            <button class="carousel-control prev" aria-label="Previous slide">◀</button>
+            <div class="carousel-viewport" aria-roledescription="carousel">
+                <ul class="carousel-track">
+                    <li class="carousel-item">
+                        <img src="Image-Repository/Dork.jpg" alt="Lookout Tower" loading="lazy">
+                    </li>
+                    <li class="carousel-item">
+                        <img src="Image-Repository/Wallpaper.jpg" alt="Firewatch Landscape" loading="lazy">
+                    </li>
+                    <li class="carousel-item">
+                        <img src="Image-Repository/94IMGBG.jpg" alt="Forest Detail" loading="lazy">
+                    </li>
+                    <li class="carousel-item">
+                        <img src="Image-Repository/Dork.jpg" alt="Lookout View" loading="lazy">
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel-control next" aria-label="Next slide">▶</button>
+        </div>
+    </section>
+
+    <section id="video" class="video-section">
+        <div class="video-container">
+            <div class="video-header">
+                <h2 class="video-title">VIDEO</h2>
+                <p class="video-subtitle">OFFICIAL-STYLE TRAILER PREVIEW</p>
+            </div>
+            <div class="video-frame-wrap">
+                <iframe
+                    class="video-frame"
+                    src="https://www.youtube-nocookie.com/embed/d02lhvvVSy8"
+                    title="Firewatch Trailer"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="missions" class="explore-section">
+        <div class="explore-container">
+            <div class="explore-header">
+                <h2 class="explore-title">EXPLORE</h2>
+                <p class="explore-subtitle">FIELD OBJECTIVES FROM TWO FORKS TOWER</p>
+            </div>
+            <div class="explore-grid">
+                <article class="explore-card">
+                    <h3 class="explore-card-title">01. Trail Sweep</h3>
+                    <p class="explore-card-text">Inspect campsites, clear routes, and report any unusual activity along canyon paths.</p>
+                </article>
+                <article class="explore-card">
+                    <h3 class="explore-card-title">02. Radio Check</h3>
+                    <p class="explore-card-text">Maintain contact with Delilah and log each call with time, weather, and coordinates.</p>
+                </article>
+                <article class="explore-card">
+                    <h3 class="explore-card-title">03. Night Watch</h3>
+                    <p class="explore-card-text">Monitor distant smoke columns and keep visual notes as temperatures drop after sunset.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <!-- Gallery Section -->
-    <section class="gallery-section">
+    <section id="gallery" class="gallery-section">
         <div class="gallery-container">
             <div class="gallery-header">
-                <h2 class="gallery-title">DORK GALLERY</h2>
+                <h2 class="gallery-title">FIREWATCH GALLERY</h2>
             </div>
             
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="Image-Repository/Dork.jpg" alt="AN-94 Front View" class="gallery-image">
+                    <img src="Image-Repository/Dork.jpg" alt="Firewatch Lookout Tower" class="gallery-image" loading="lazy">
                     <div class="gallery-overlay">
                         <div class="gallery-info">
-                            <h4 class="gallery-item-title">DORK</h4>
-                        <p class="gallery-item-desc">Airhead</p>
+                            <h4 class="gallery-item-title">Lookout</h4>
+                        <p class="gallery-item-desc">Shoshone vista</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="gallery-item">
-                    <img src="Image-Repository/Dork.jpg" alt="AN-94 Components" class="gallery-image">
+                    <img src="Image-Repository/Dork.jpg" alt="Forest Trail" class="gallery-image" loading="lazy">
                     <div class="gallery-overlay">
                         <div class="gallery-info">
-                                   <h4 class="gallery-item-title">DORK</h4>
-                          <p class="gallery-item-desc">Airhead</p>
+                                  <h4 class="gallery-item-title">Trail</h4>
+                          <p class="gallery-item-desc">Forest path</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="gallery-item">
-                    <img src="Image-Repository/Dork.jpg" alt="AN-94 with Scope" class="gallery-image">
+                    <img src="Image-Repository/Dork.jpg" alt="Sunset Over Forest" class="gallery-image" loading="lazy">
                     <div class="gallery-overlay">
                         <div class="gallery-info">
-                                  <h4 class="gallery-item-title">DORK</h4>
-                         <p class="gallery-item-desc">Airhead</p>
+                                  <h4 class="gallery-item-title">Sunset</h4>
+                         <p class="gallery-item-desc">Evening glow</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="gallery-item">
-                    <img src="Image-Repository/Dork.jpg" alt="AN-94 in Action" class="gallery-image">
+                    <img src="Image-Repository/Dork.jpg" alt="Watchtower Interior" class="gallery-image" loading="lazy">
                     <div class="gallery-overlay">
                         <div class="gallery-info">
-                                <h4 class="gallery-item-title">DORK</h4>
-                    <p class="gallery-item-desc">Airhead</p>
+                                <h4 class="gallery-item-title">Interior</h4>
+                    <p class="gallery-item-desc">Personal station</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="gallery-item">
-                    <img src="Image-Repository/Dork.jpg" alt="AN-94 Magazine" class="gallery-image">
+                    <img src="Image-Repository/Dork.jpg" alt="Forest Detail" class="gallery-image" loading="lazy">
                     <div class="gallery-overlay">
                         <div class="gallery-info">
-                           <h4 class="gallery-item-title">DORK</h4>
-                     <p class="gallery-item-desc">Airhead</p>
+                           <h4 class="gallery-item-title">Foliage</h4>
+                     <p class="gallery-item-desc">Close-up</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="gallery-item">
-                    <img src="Image-Repository/Dork.jpg" alt="AN-94 Detail View" class="gallery-image">
+                    <img src="Image-Repository/Dork.jpg" alt="Lookout View" class="gallery-image" loading="lazy">
                     <div class="gallery-overlay">
                         <div class="gallery-info">
-                             <h4 class="gallery-item-title">DORK</h4>
-                            <p class="gallery-item-desc">Airhead</p>
+                             <h4 class="gallery-item-title">View</h4>
+                            <p class="gallery-item-desc">Wide panorama</p>
                         </div>
                     </div>
                 </div>
@@ -137,40 +211,24 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-brand">
-                        <span class="footer-logo">AN</span>
-                        <span class="footer-title">NIKONOV AN-94</span>
+                        <img src="Image-Repository/Firewatch_Logo.png" alt="Firewatch style logo" class="footer-logo-image" loading="lazy">
+                        <span class="footer-title">Fan Concept</span>
                     </div>
                     <p class="footer-description">
-                        Advanced Russian assault rifle system designed for elite military operations.
+                        A story-driven first-person mystery set in the Wyoming wilderness, developed by Campo Santo.
                     </p>
                 </div>
                 
-                <div class="footer-section">
-                    <h4 class="footer-heading">INTEL STATUS</h4>
-                    <div class="status-info">
-                        <div class="status-item">
-                            <span class="status-indicator active"></span>
-                            <span class="status-text">OPERATIONAL</span>
-                        </div>
-                        <div class="status-item">
-                            <span class="status-label">LAST UPDATE:</span>
-                            <span class="status-value">27.09.2025</span>
-                        </div>
-                        <div class="status-item">
-                            <span class="status-label">CLASSIFICATION:</span>
-                            <span class="status-value">RESTRICTED</span>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
             
             <div class="footer-bottom">
                 <div class="footer-copyright">
-                    <p>&copy; 2025 NIKONOV AN-94 PROJECT. ALL RIGHTS RESERVED.</p>
+                    <p>Fan-made concept page inspired by Firewatch.</p>
                 </div>
                 <div class="footer-legal">
-                    <span class="legal-text">CLASSIFIED MILITARY DOCUMENTATION</span>
-                    <span class="clearance-level">SECURITY CLEARANCE REQUIRED</span>
+                    <span class="legal-text">ORIGINAL PAGE LAYOUT</span>
+                    <span class="clearance-level">NOT OFFICIAL CAMPO SANTO SITE</span>
                 </div>
             </div>
         </div>
@@ -178,5 +236,40 @@
 
 
   
+    <script>
+        (function(){
+            /* --- Carousel controls --- */
+            const track = document.querySelector('.carousel-track');
+            const prev = document.querySelector('.carousel-control.prev');
+            const next = document.querySelector('.carousel-control.next');
+            if(track && prev && next){
+                const slides = track.children;
+                let index = 0;
+                function show(i){
+                    index = (i + slides.length) % slides.length;
+                    track.style.transform = `translateX(-${index * 100}%)`;
+                }
+                prev.addEventListener('click', ()=> show(index - 1));
+                next.addEventListener('click', ()=> show(index + 1));
+                document.addEventListener('keydown', (e)=>{
+                    if(e.key === 'ArrowLeft') show(index - 1);
+                    if(e.key === 'ArrowRight') show(index + 1);
+                });
+            }
+
+            /* --- Navbar scrolled shadow --- */
+            const navbar = document.querySelector('.navbar');
+
+            function onScroll(){
+                // scrolled shadow
+                if(window.scrollY > 24) navbar && navbar.classList.add('scrolled');
+                else navbar && navbar.classList.remove('scrolled');
+            }
+
+            window.addEventListener('scroll', onScroll, {passive: true});
+            // set initial state
+            onScroll();
+        })();
+    </script>
 </body>
 </html>
