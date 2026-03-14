@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Firewatch Explore - Field objectives and missions from Two Forks Tower.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <title>Explore - Firewatch</title>
+    <link rel="stylesheet" href="explore.css">
+</head>
+<body>
+    <a class="skip-link" href="#explore">Skip to content</a>
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="nav-brand">
+            <img src="Image-Repository/Firewatch_Logo.png" alt="Firewatch style logo" class="brand-logo-image" loading="lazy">
+        </div>
+        <ul class="nav-menu">
+             <li><a href="index.html">HOME</a></li>
+            <li><a href="intro.html">INTRO</a></li>
+            <li><a href="explore.html" class="active">EXPLORE</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Explore Section -->
+    <main id="explore" class="explore-main">
+        <div class="explore-container">
+            <div class="explore-header">
+                <h1 class="explore-title">EXPLORE</h1>
+                <p class="explore-subtitle">FIELD OBJECTIVES FROM TWO FORKS TOWER</p>
+            </div>
+            
+            <div class="explore-grid">
+                <article class="explore-card">
+                    <h3 class="explore-card-title">01. Trail Sweep</h3>
+                    <p class="explore-card-text">Inspect campsites, clear routes, and report any unusual activity along canyon paths.</p>
+                </article>
+                <article class="explore-card">
+                    <h3 class="explore-card-title">02. Radio Check</h3>
+                    <p class="explore-card-text">Maintain contact with Delilah and log each call with time, weather, and coordinates.</p>
+                </article>
+                <article class="explore-card">
+                    <h3 class="explore-card-title">03. Night Watch</h3>
+                    <p class="explore-card-text">Monitor distant smoke columns and keep visual notes as temperatures drop after sunset.</p>
+                </article>
+                <article class="explore-card">
+                    <h3 class="explore-card-title">04. Supply Run</h3>
+                    <p class="explore-card-text">Retrieve provisions from the cache points and restock your station inventory.</p>
+                </article>
+                <article class="explore-card">
+                    <h3 class="explore-card-title">05. Wildlife Survey</h3>
+                    <p class="explore-card-text">Document animal movements and report any signs of poaching or disturbance.</p>
+                </article>
+                <article class="explore-card">
+                    <h3 class="explore-card-title">06. Weather Watch</h3>
+                    <p class="explore-card-text">Track storm systems and warn of approaching lightning or high winds.</p>
+                </article>
+            </div>
+
+            <div class="explore-back">
+                <a href="index.html" class="explore-back-link">← Back to Home</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="Image-Repository/Firewatch_Logo.png" alt="Firewatch style logo" class="footer-logo-image" loading="lazy">
+                        <span class="footer-title">Fan Concept</span>
+                    </div>
+                    <p class="footer-description">
+                        A story-driven first-person mystery set in the Wyoming wilderness, developed by Campo Santo.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>Fan-made concept page inspired by Firewatch.</p>
+                </div>
+                <div class="footer-legal">
+                    <span class="legal-text">EXPLORE PAGE</span>
+                    <span class="clearance-level">NOT OFFICIAL CAMPO SANTO SITE</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function(){
+            /* --- Navbar scrolled shadow --- */
+            const navbar = document.querySelector('.navbar');
+
+            function onScroll(){
+                if(window.scrollY > 24) navbar && navbar.classList.add('scrolled');
+                else navbar && navbar.classList.remove('scrolled');
+            }
+
+            window.addEventListener('scroll', onScroll, {passive: true});
+            onScroll();
+        })();
+    </script>
+</body>
+</html>
