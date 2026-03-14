@@ -6,7 +6,7 @@
     <meta name="description" content="Firewatch is a single player first-person mystery set in the Wyoming wilderness, developed by Campo Santo. Explore the story of Henry and Delilah as they uncover secrets in the forest.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
     <title>Firewatch</title>
-    <link rel="stylesheet" href="Global.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <a class="skip-link" href="#home">Skip to content</a>
@@ -15,10 +15,10 @@
             <img src="Image-Repository/Firewatch_Logo.png" alt="Firewatch style logo" class="brand-logo-image" loading="lazy">
         </div>
         <ul class="nav-menu">
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#history">INTRO</a></li>
-            <li><a href="#missions">EXPLORE</a></li>
-            <li><a href="#gallery">GALLERY</a></li>
+             <li><a href="index.html" class="active">HOME</a></li>
+            <li><a href="intro.html">INTRO</a></li>
+            <li><a href="explore.html">EXPLORE</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
         </ul>
         
     </nav>
@@ -41,7 +41,7 @@
             </div>
             <div class="hero-actions">
                 <a href="#video" class="hero-btn hero-btn-primary">Watch Trailer</a>
-                <a href="#gallery" class="hero-btn hero-btn-secondary">View Gallery</a>
+                <a href="gallery.html" class="hero-btn hero-btn-secondary">View Gallery</a>
             </div>
 
         </div>
@@ -62,6 +62,80 @@
                 <img src="Image-Repository/Wallpaper.jpg" alt="Firewatch Landscape" class="weapon-image" loading="lazy">
                 <div class="image-overlay">
                     <span class="image-caption">Firewatch</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="video" class="video-section">
+        <div class="video-container">
+            <div class="video-header">
+                <h2 class="video-title">VIDEO</h2>
+                <p class="video-subtitle">OFFICIAL-STYLE TRAILER PREVIEW</p>
+            </div>
+            <div class="video-frame-wrap">
+                <iframe
+                    class="video-frame"
+                    src="https://www.youtube-nocookie.com/embed/d02lhvvVSy8"
+                    title="Firewatch Trailer"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section id="experiences" class="experiences-section">
+        <div class="experiences-container">
+            <div class="experiences-header">
+                <h2 class="experiences-title">EXPERIENCES</h2>
+                <p class="experiences-subtitle">WHAT AWAITS IN THE WILDERNESS</p>
+            </div>
+            <div class="experiences-grid">
+                <div class="experience-card">
+                    <h3 class="experience-card-title">PATROL THE FOREST</h3>
+                    <p class="experience-card-text">
+                        Explore the vast Wyoming wilderness as a fire lookout. Hike through dense forests, 
+                        climb watchtowers, and discover the beauty and danger of nature in 1989.
+                    </p>
+                </div>
+                <div class="experience-card">
+                    <h3 class="experience-card-title">RADIO COMMUNICATIONS</h3>
+                    <p class="experience-card-text">
+                        Stay connected with Delilah through your handheld radio. Your conversations form 
+                        the emotional core of the story, revealing mysteries and building trust.
+                    </p>
+                </div>
+                <div class="experience-card">
+                    <h3 class="experience-card-title">UNCOVER MYSTERIES</h3>
+                    <p class="experience-card-text">
+                        Investigate strange occurrences in the forest. Discover hidden locations, 
+                        piece together clues, and unravel a web of secrets that span the wilderness.
+                    </p>
+                </div>
+                <div class="experience-card">
+                    <h3 class="experience-card-title">STORY CHOICES</h3>
+                    <p class="experience-card-text">
+                        Your decisions shape the narrative. Every conversation and action influences 
+                        your relationship with Delilah and the outcome of the mystery.
+                    </p>
+                </div>
+                <div class="experience-card">
+                    <h3 class="experience-card-title">BEAUTIFUL ART DIRECTION</h3>
+                    <p class="experience-card-text">
+                        Immerse yourself in a stunning visual world. The award-winning art style brings 
+                        the Wyoming landscape to life with breathtaking sunsets and atmospheric detail.
+                    </p>
+                </div>
+                <div class="experience-card">
+                    <h3 class="experience-card-title">ORIGINAL SOUNDTRACK</h3>
+                    <p class="experience-card-text">
+                        Experience a moving musical score by composer Chris Remo. The ambient soundscapes 
+                        enhance every moment of your journey through the wilderness.
+                    </p>
                 </div>
             </div>
         </div>
@@ -91,119 +165,7 @@
         </div>
     </section>
 
-    <section id="video" class="video-section">
-        <div class="video-container">
-            <div class="video-header">
-                <h2 class="video-title">VIDEO</h2>
-                <p class="video-subtitle">OFFICIAL-STYLE TRAILER PREVIEW</p>
-            </div>
-            <div class="video-frame-wrap">
-                <iframe
-                    class="video-frame"
-                    src="https://www.youtube-nocookie.com/embed/d02lhvvVSy8"
-                    title="Firewatch Trailer"
-                    loading="lazy"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen>
-                </iframe>
-            </div>
-        </div>
-    </section>
 
-    <section id="missions" class="explore-section">
-        <div class="explore-container">
-            <div class="explore-header">
-                <h2 class="explore-title">EXPLORE</h2>
-                <p class="explore-subtitle">FIELD OBJECTIVES FROM TWO FORKS TOWER</p>
-            </div>
-            <div class="explore-grid">
-                <article class="explore-card">
-                    <h3 class="explore-card-title">01. Trail Sweep</h3>
-                    <p class="explore-card-text">Inspect campsites, clear routes, and report any unusual activity along canyon paths.</p>
-                </article>
-                <article class="explore-card">
-                    <h3 class="explore-card-title">02. Radio Check</h3>
-                    <p class="explore-card-text">Maintain contact with Delilah and log each call with time, weather, and coordinates.</p>
-                </article>
-                <article class="explore-card">
-                    <h3 class="explore-card-title">03. Night Watch</h3>
-                    <p class="explore-card-text">Monitor distant smoke columns and keep visual notes as temperatures drop after sunset.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery-section">
-        <div class="gallery-container">
-            <div class="gallery-header">
-                <h2 class="gallery-title">FIREWATCH GALLERY</h2>
-            </div>
-            
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="Image-Repository/Dork.jpg" alt="Firewatch Lookout Tower" class="gallery-image" loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-info">
-                            <h4 class="gallery-item-title">Lookout</h4>
-                        <p class="gallery-item-desc">Shoshone vista</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="gallery-item">
-                    <img src="Image-Repository/Dork.jpg" alt="Forest Trail" class="gallery-image" loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-info">
-                                  <h4 class="gallery-item-title">Trail</h4>
-                          <p class="gallery-item-desc">Forest path</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="gallery-item">
-                    <img src="Image-Repository/Dork.jpg" alt="Sunset Over Forest" class="gallery-image" loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-info">
-                                  <h4 class="gallery-item-title">Sunset</h4>
-                         <p class="gallery-item-desc">Evening glow</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="gallery-item">
-                    <img src="Image-Repository/Dork.jpg" alt="Watchtower Interior" class="gallery-image" loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-info">
-                                <h4 class="gallery-item-title">Interior</h4>
-                    <p class="gallery-item-desc">Personal station</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="gallery-item">
-                    <img src="Image-Repository/Dork.jpg" alt="Forest Detail" class="gallery-image" loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-info">
-                           <h4 class="gallery-item-title">Foliage</h4>
-                     <p class="gallery-item-desc">Close-up</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="gallery-item">
-                    <img src="Image-Repository/Dork.jpg" alt="Lookout View" class="gallery-image" loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-info">
-                             <h4 class="gallery-item-title">View</h4>
-                            <p class="gallery-item-desc">Wide panorama</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer class="footer">
